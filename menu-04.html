@@ -1,0 +1,77 @@
+<html>
+<head>
+	<script src="lib/jquery/jquery-2.0.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+	
+			$("#menu li").click(selectMenu);
+			
+		});
+	
+		function selectMenu(event){
+			//alert(this);
+			$("#menu li").each(function(){
+				if($(this).hasClass("selected")){
+					$(this).removeClass("selected");
+				}
+			});
+	
+			$(this).addClass("selected");
+		}
+	
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="css/menu-04.css" />
+
+</head>
+
+<body>
+	<div id="header">
+	
+		<ul id="menu">
+			<li class="selected">
+				<div class="outerContainer">
+					<div class="innerContainer">
+						<div>
+							<a href="#Home">Home</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="outerContainer">
+					<div class="innerContainer">
+						<div><a href="#Home">Products</a></div>
+					</div>
+				</div>
+				
+			</li>
+			<li>
+				<div class="outerContainer">
+					<div class="innerContainer">
+						<div><a href="#Home">Downloads</a></div>
+					</div>
+				</div>
+				
+			</li>
+			<li>
+				<div class="outerContainer">
+					<div class="innerContainer">
+						<div><a href="#Home">About Us</a></div>
+					</div>
+				</div>
+				
+			</li>
+			<li>
+				<div class="outerContainer">
+					<div class="innerContainer">
+						<div><a href="#Home">Contacts</a></div>
+					</div>
+				</div>
+				
+			</li>
+		</ul>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+
+*{font-family: verdana;}
+
+
+div#header{background-color: #1A1A1A; width: 100%; display: table; height: 100px;}
+ul#menu{padding: 0; margin: 0;}
+ul#menu{font-weight: bold;}
+
+
+ul#menu li{padding: 0; margin: 0; list-style: none; float: left;}
+ul#menu li{color: #AAAAAA;}
+ul#menu li:hover{color: #FFFFFF;}
+ul#menu li.selected{color: #FFFFFF;}
+
+ul#menu li a{text-decoration: none; color: #AAAAAA;}
+ul#menu li a:hover{text-decoration: none; color: #FFFFFF; border-bottom: 2px solid #E55F25;}
+ul#menu li:hover a{text-decoration: none; color: #FFFFFF; border-bottom: 2px solid #E55F25;}
+ul#menu li.selected a{text-decoration: none; color: #FFFFFF; border-bottom: 2px solid #E55F25;}
+ul#menu li.selected a:hover{text-decoration: none; color: #FFFFFF; border-bottom: 2px solid #FFFFFF;}
+
+
+.outerContainer {display: table; width: 100px; /* width of parent */ height: 100px; /* height of parent */overflow: hidden;}
+.outerContainer .innerContainer{display: table-cell; vertical-align: middle; width: 100%; margin: 0 auto; text-align: center;}
+.outerContainer {padding-left: 20px; padding-right: 20px;}
+
